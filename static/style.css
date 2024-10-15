@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d1e3f1; /* Soft light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background-color: #f9f9f9; /* Soft off-white background for the container */
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); /* Slightly softer shadow */
+    border-radius: 12px; /* More rounded corners */
+}
+
+.login-container, .chat-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Dark gray-blue for the heading */
+}
+
+label {
+    margin-top: 10px;
+    color: #34495e; /* Slightly muted dark gray for labels */
+}
+
+input[type="text"], input[type="password"], select {
+    width: 100%;
+    padding: 12px; /* Increased padding for better spacing */
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #a1c4e5; /* Soft blue-gray border */
+    border-radius: 6px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #5a8f94; /* Muted blue-gray for buttons */
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4b7b82; /* Slightly darker blue-gray on hover */
+}
+
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #a1c4e5; /* Soft blue-gray border */
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background-color: #e9f2f8; /* Light blue background for chat box */
+}
+
+.message {
+    margin-bottom: 12px; /* Added more space between messages */
+}
+
+.user-message {
+    color: #5a8f94; /* Muted teal for user messages */
+    margin-left: auto;
+    text-align: right;
+}
+
+.bot-message {
+    color: #2ecc71; /* Soft green for bot messages */
+    text-align: left;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <div class="container">
+        <div id="login-container" class="login-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <button type="reset" id="logout" style="float: right">Logout</button>
+
+        <div id="chat-container" class="chat-container" style="display:none;">
+            <h2>Chat</h2>
+            <div id="chat-box" class="chat-box"></div>
+            <form id="chat-form">
+                <label for="persona">Choose a persona:</label>
+                <select id="persona" name="persona">
+                    <option value="developer">Developer</option>
+                    <option value="hr">HR</option>
+                    <option value="business_coach">Business Coach</option>
+                </select>
+                <input type="text" id="message" name="message" placeholder="Type your message here" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>
